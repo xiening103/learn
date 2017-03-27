@@ -1,0 +1,42 @@
+.pos{
+  position: relative;
+}
+.example-enter {
+   opacity: 0.01;
+   left:500px;
+ }
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  left:0px;
+  transition: left 5000ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}
+
+.unexample-enter {
+  opacity: 0.01;
+  left:0px;
+}
+
+.unexample-enter.example-enter-active {
+  opacity: 1;
+  left:500px;
+  transition: left 5000ms ease-in;
+}
+
+.unexample-leave {
+  opacity: 1;
+}
+
+.unexample-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}
