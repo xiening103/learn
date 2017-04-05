@@ -5,6 +5,7 @@ export function getForecast(city) {
   return function(dispatch) {
     var url = 'https://free-api.heweather.com/v5/forecast?key=0874df2ce3104c3b99a282986da43c83&city='+city;
     fetch(url, {method: 'get'}).then(function (response) {
+      console.log(response);
       return response.json();
     }).then(function (json) {
       dispatch({

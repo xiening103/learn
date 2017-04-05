@@ -15,9 +15,10 @@ class Info extends React.Component {
   }
 
   render() {
-      console.debug(this);
     var info = this.props.info;
+      console.log(info);
     var wData = info.wData && info.wData[0] || null;
+      console.log(wData);
     var infoList = [];
 
     if (!wData) {
@@ -25,7 +26,6 @@ class Info extends React.Component {
         <div>这里是信息页面。</div>
       );
     }
-
     return (
       <div>
         <div>这里是信息页面。</div>
@@ -43,9 +43,9 @@ class Info extends React.Component {
 
 // 映射state到props
 const mapStateToProps = (state, ownProps) => {
-  return {
-    info: state.app.info
-  }
+    return {
+        info: state.app.info
+    }
 };
 // 映射dispatch到props
 const mapDispatchToProps = (dispatch, ownProps) => {

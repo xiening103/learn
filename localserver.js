@@ -1,7 +1,7 @@
 var express = require('express');
 var path = require('path');
 var app = express();
-var port = 8082;
+var port = 8080;
 
 // 加载静态文件
 app.use(express.static('./build'));

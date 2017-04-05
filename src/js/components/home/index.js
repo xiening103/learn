@@ -49,8 +49,8 @@ class Home extends React.Component {
 
   render() {
       var imgrow=[];
-      imgdatas.forEach(function(imgdata){
-          imgrow.push(<li className="img_li"><img data-original={imgdata.orignurl} src={imgdata.thumurl}/></li>)
+      imgdatas.forEach(function(imgdata,key){
+          imgrow.push(<li className="img_li" key={key}><img data-original={imgdata.orignurl} src={imgdata.thumurl}/></li>)
       }.bind(this));
       return(
           <div>

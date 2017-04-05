@@ -14,6 +14,7 @@ class App extends React.Component {
           <Link activeClassName="active" to="/home">首页</Link>
           <Link activeClassName="active" to="/info">信息</Link>
           <Link activeClassName="active" to="/about">关于</Link>
+          <Link activeClassName="active" to="/book">图书</Link>
         </div>
         {this.props.children}
       </div>
